@@ -1,0 +1,1 @@
+this portfolio is designed on the basis of the mock up portfolio website (file_name: design.jpeg), boot4.html contains my original codes for my portfolio. likewise boot4.css contains the css for the portfolio.
