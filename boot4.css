@@ -109,7 +109,7 @@ ul li{
 /*about*/
 .wrap{
 	
-	padding: 5% 0 8% 0;
+	padding: 20% 0 8% 0;
 }
 .wrap p{
 	padding:0 25px 0 0;
@@ -203,7 +203,7 @@ ul li{
 
 
 .what{
- padding: 5%;
+ padding: 15% 5% 0 5%;
 }
 .what-t{
 	padding: 0 0 5px 0;
@@ -248,8 +248,10 @@ ul li{
 }
 
 /*skills*/
+
 .skills{
-	padding: 5% 10px;
+	padding: 20% 0 0 0;
+
 	
 }
 .skills .content{
@@ -281,7 +283,7 @@ ul li{
 	}
 }
 .wrap-text{
-	margin-top: 100px;
+	margin-top: 0px;
 	padding: 0;
 
 }
@@ -336,7 +338,7 @@ ul li{
 /*contact*/
 .text-wrap{
 	margin-top: 100px;
-	padding: 0;
+	padding: 10% 0 0 0 ;
 }
 .text-wraps{
 	
@@ -398,17 +400,22 @@ ul li{
 .progress-bar{
 	height: 10px;
 	background-color: #4edbc5;
+
 }
 .progress{
 	height: 10px;
 	background-color: gray;
+
 }
 .subject{
+	font-size: 20px;
 	text-align: left;
 	font-weight: bold;
+	padding: 10px 0 0 0;
 }
-.percent{
+.percents{
 	float: right;
+	
 }
 @media (min-width: 1000px){
 .progress-bar{
@@ -417,6 +424,170 @@ ul li{
 .progress{
 	background-color: #474B4F;
 }
+}
+
+/*circular progress*/
+.boxs{
+	position: relative;
+	top: 0;
+	left: 100px;
+	padding-top: 30px;
+}
+.boxs .percent{
+	position: relative;0
+	width: 100px;
+	height: 100px;
+}
+.boxs .percent svg{
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+.boxs .percent svg circle{
+	width: 100px;
+	height: 100px;
+	fill: none;
+	stroke-width:5;
+	stroke:#000;
+	transform: translate(5px, 5px);
+	stroke-dasharray:260;
+	stroke-dashoffset:260;
+}
+.boxs .percent svg circle:nth-child(1){
+	stroke-dashoffset:0;
+	stroke: gray;
+}
+.boxs .percent svg circle:nth-child(2){
+	stroke: #00E6E6;
+}
+.boxs .percent .number{
+	position: absolute;
+	top: 27px;
+	left: 25px;
+	color: #000000;
+}
+.boxs .percent .number h2{
+	font-size: 28px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+}
+.boxs .percent .number h2 span{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+}
+.boxs .text{
+	position: absolute;
+	top: 95px;
+	transform: translateX(-12px);
+	margin: 0;
+	color: #000000;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-family: 'Roboto', sans-serif;
+}
+@media (min-width: 1000px)
+{
+	.boxs .percent .number{
+		color: white;
+	}
+	.boxs .text{
+		color: white;
+	}
+}
+@media(min-width: 1000px){
+	.boxs .percent .number h2:hover{
+		font-size: 35px;
+	}
+}
+@media (min-width: 1000px){
+	.boxs .percent svg circle:nth-child(1){
+		stroke: #6B6E70;
+	}
+	.boxs .percent svg circle:nth-child(2){
+		stroke: #474B4F;
+	}
+}
+.boxss{
+	position: relative;
+	float: right;
+	right: 90px;
+	bottom: 95px;
+	transform: translateY(-175px);
+	padding-top: 30px;
+}
+.boxss .percent{
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+.boxss .percent svg{
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+.boxss .percent svg circle{
+	width: 100px;
+	height: 100px;
+	fill: none;
+	stroke-width:5;
+	stroke:#000;
+	transform: translate(5px, 5px);
+	stroke-dasharray:260;
+	stroke-dashoffset:260;
+}
+.boxss .percent svg circle:nth-child(1){
+	stroke-dashoffset:0;
+	stroke: gray;
+}
+.boxss .percent svg circle:nth-child(2){
+	stroke: #00E6E6;
+}
+.boxss .percent .number{
+	position: absolute;
+	top: 27px;
+	left: 25px;
+	color: #000000;
+}
+.boxss .percent .number h2{
+	font-size: 28px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+}
+.boxss .percent .number h2 span{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+}
+.boxss .text{
+	position: absolute;
+	top: 95px;
+	transform: translateX(5px);
+	margin: 0;
+	color: #000000;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-family: 'Roboto', sans-serif;
+}
+@media (min-width: 1000px)
+{
+	.boxss .percent .number{
+		color: white;
+	}
+	.boxss .text{
+		color: white;
+	}
+}
+@media(min-width: 1000px){
+	.boxss .percent .number h2:hover{
+		font-size: 35px;
+	}
+}
+@media (min-width: 1000px){
+	.boxss .percent svg circle:nth-child(1){
+		stroke: #6B6E70;
+	}
+	.boxss .percent svg circle:nth-child(2){
+		stroke: #474B4F;
+	}
 }
 
 /*body*/
